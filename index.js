@@ -10,16 +10,18 @@ const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakf
   2- these items are the SAME FORMAT as the items above. 
 */
 
-function createMenuItem(name, cost, category){
-    /* Code here */
-}
+// function createMenuItem(name, price, category){
+//   return {name, price, category};
+// }
 
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like
   1: function - create 3 more menu items 
   2: add any new item that you like to the menu. 
 
 */
-
+// console.log(createMenuItem('Pho', 10, 'Lunch'));
+// console.log(createMenuItem('Spring Roll', 15, 'Lunch'));
+// console.log(createMenuItem('Milk Tea', 7, 'Drinks'));
 
 
 /* Task 2: You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to your burger object that automatically calculates price given a string as a parameter. 
@@ -36,8 +38,15 @@ For example, burger.discount("teacher") would return 13.5 and burger.discount("p
 2- Method accept : a string
 3- return a number 
 */
+function discount(string) {
+  if (string === "teacher" || string === "student" ){
+    return burger.discount = (burger.price - (burger.price * 0.25));
+  } else 
+      return burger.discount = ( burger.price - (burger.price * 0.10));
+      }
 
-
+// console.log(discount("public"));
+// console.log(discount("teacher"));
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -52,14 +61,29 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 ]
 
 /* Task 4: Console.log just Julius' feedback */
+
+
 // console.log(reviews[5].feedback); 
 
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
-      newRating : function (){
 
-      }
 
-/* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+
+//  function myOpinion(name, rating, feedback) {
+//       reviews.push({ name: name , rating : rating, feedback: feedback })
+//     return reviews;
+//  }
+// console.log(myOpinion("Alex", 3, " the food is pricey but not worth it !"));
+
+
+/* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"*/
+
+// function addFeedback(string){
+//    reviews[7].feedback = string 
+//    return reviews[7].feedback ; 
+// }
+// console.log(addFeedback("this place is chill with really cool people, great for getting work done on weekdays"))
+// console.log(reviews)
 
 /*  Task 7: Write a function to return a review based on the index of the review in the array.
 
@@ -77,15 +101,14 @@ and should return a string in the format `{name} gave the restaurant a {rating},
 2- function : ( arr) - hold all reviews ; (number) - desires index in array. 
 3- RETURN A STRING : `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`
 -- LOOP THROUGH THE ARR -> RETURN A STRING . 
- * 
-
-
-
+ * ASK MICHEAL!!! 
  */
-function getReviewByIndex(reviews, index) {
-    /* code here */
-  }
-  
+// // function getReviewByIndex(reviews, index) {
+//         reviews[reviews.length -1]
+// //     return `${reviews[reviews.length -1].name} gave the restaurant a ${reviews[reviews.length -1].rating}, and their feedback was ${reviews[reviews.length -1].feedback}` ;
+// //   }
+
+// //   console.log(getReviewByIndex(0)) 
 
 /* Task 8: Write a function to get information about the most recent review called `getLastReview`
 
@@ -101,10 +124,13 @@ For example, if getLastReview is invoked passing the reviews array it will retur
 3- RETURN A STRING :  `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`
 
 */
-function getLastReview(/* code here */) {
-    /* code here */
-  } 
 
+
+function getLastReview(ojbArr) {
+    
+     return `${reviews[reviews.length -1].name} gave the restaurant a ${reviews[reviews.length -1].rating}, and their feedback was ${reviews[reviews.length -1].feedback}` ;
+  } 
+// console.log(getLastReview(0))
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
