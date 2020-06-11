@@ -4,13 +4,21 @@ const latte = {name: "Cafe Latte", price: 4, category: "Drinks"};
 const burger = {name: "Burger", price: 18, category: "Lunch"};
 const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakfast"};
 
-/* Task 1a: write a function to return more menu items with the same format as the items above. */
+/* Task 1a: write a function to return more menu items with the same format as the items above.
+
+  1- function to return MORE MENU ITEMS 
+  2- these items are the SAME FORMAT as the items above. 
+*/
 
 function createMenuItem(name, cost, category){
     /* Code here */
 }
 
-/* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
+/* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like
+  1: function - create 3 more menu items 
+  2: add any new item that you like to the menu. 
+
+*/
 
 
 
@@ -22,7 +30,12 @@ Your method should accept:
 
 and should return a number. 
 
-For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
+For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2
+ 
+1- ADD method to burger object -> CALCULATE PRICE  given a string as a parameter. 
+2- Method accept : a string
+3- return a number 
+*/
 
 
 
@@ -39,10 +52,12 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 ]
 
 /* Task 4: Console.log just Julius' feedback */
-
+// console.log(reviews[5].feedback); 
 
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
+      newRating : function (){
 
+      }
 
 /* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
 
@@ -57,7 +72,16 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * 
  * For example, if getReviewByIndex is invoked with reviews and the number 0
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
-*/
+
+1- function : RETURN A REVIEW : based on the index in the array.
+2- function : ( arr) - hold all reviews ; (number) - desires index in array. 
+3- RETURN A STRING : `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`
+-- LOOP THROUGH THE ARR -> RETURN A STRING . 
+ * 
+
+
+
+ */
 function getReviewByIndex(reviews, index) {
     /* code here */
   }
@@ -68,9 +92,14 @@ function getReviewByIndex(reviews, index) {
 getLastReview should accept:
   (1) an array of objects 
   
-and should return a string in the format `name} gave the restaurant a {rating}, and their feedback was: {feedback}`
+and should return a string in the format `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
+
+1- function: GET INFOR about recent review -> getLastReview
+2- function accept (arr) - of object
+3- RETURN A STRING :  `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`
+
 */
 function getLastReview(/* code here */) {
     /* code here */
